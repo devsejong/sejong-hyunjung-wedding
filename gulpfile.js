@@ -67,3 +67,5 @@ gulp.task('html', function() {
 });
 
 gulp.task('default', ['html', 'js', 'sass', 'connect', 'watch']);
+
+gulp.task('build', ['html', 'js', 'sass']);
