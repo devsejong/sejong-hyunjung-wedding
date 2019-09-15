@@ -205,6 +205,12 @@ figure {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .fh5co-cover .display-tc h1 {
+    font-size: 40px;
+  }
+}
+
 .fh5co-cover .display-tc h2 {
   color: #fff;
   font-size: 80px;
@@ -218,7 +224,7 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-tc h2 {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 

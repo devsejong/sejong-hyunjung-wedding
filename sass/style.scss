@@ -271,6 +271,9 @@ figure {
 		vertical-align: middle;
 		h1{
 			color: $brand-white;
+			@media screen and (max-width: $screen-sm) {
+				font-size: 40px;
+			}
 		}
 		h2{
 			color: $brand-white;
@@ -281,7 +284,7 @@ figure {
 				font-weight: 700;
 			}
 			@media screen and (max-width: $screen-sm) {
-				font-size: 60px;
+				font-size: 50px;
 			}
 		}
 		p{
