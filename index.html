@@ -88,7 +88,7 @@
                 <div class="display-t">
                     <div class="display-tc">
                         <div class="container">
-                            <div class="col-md-10 col-md-offset-1">
+                            <div class="col-md-10 col-md-offset-1 col-xs-12">
                                 <div class="animate-box">
                                     <h1>저희.. 결혼합니다</h1>
                                     <h2>박세종 &amp; 강현정</h2>
@@ -109,24 +109,24 @@
 
         <!-- END fh5co-page -->
 
-        <header id="fh5co-header-section" class="sticky-banner">
-            <div class="container">
-                <div class="nav-header">
-                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-                    <h1 id="fh5co-logo"><a href="index2.html">박세종 &amp; 강현정</a></h1>
-                    <!-- START #fh5co-menu-wrap -->
-                    <nav id="fh5co-menu-wrap" role="navigation">
-                        <ul class="sf-menu" id="fh5co-primary-menu">
-                            <li class="menu-item"><a href="#home">홈</a></li>
-                            <li class="menu-item"><a href="#where">오시는길</a></li>
-                            <li class="menu-item"><a href="#contact">연락처</a></li>
-                            <li class="menu-item"><a href="#gallery">사진</a></li>
-                            <li class="menu-item"><a href="#guestbook">방명록</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+<!--        <header id="fh5co-header-section" class="sticky-banner">-->
+<!--            <div class="container">-->
+<!--                <div class="nav-header">-->
+<!--                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>-->
+<!--                    <h1 id="fh5co-logo"><a href="index2.html">박세종 &amp; 강현정</a></h1>-->
+<!--                    &lt;!&ndash; START #fh5co-menu-wrap &ndash;&gt;-->
+<!--                    <nav id="fh5co-menu-wrap" role="navigation">-->
+<!--                        <ul class="sf-menu" id="fh5co-primary-menu">-->
+<!--                            <li class="menu-item"><a href="#home">홈</a></li>-->
+<!--                            <li class="menu-item"><a href="#where">오시는길</a></li>-->
+<!--                            <li class="menu-item"><a href="#contact">연락처</a></li>-->
+<!--                            <li class="menu-item"><a href="#gallery">사진</a></li>-->
+<!--                            <li class="menu-item"><a href="#guestbook">방명록</a></li>-->
+<!--                        </ul>-->
+<!--                    </nav>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </header>-->
         <!-- end:header-top -->
 
         <!-- start: where-->
@@ -254,9 +254,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-10 text-center center-block">
-                        <div id="lv-container" data-id="city" data-uid="MTAyMC80NjY0MS8yMzE1MQ==">
-                        </div>
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                        <div id="disqus_thread"></div>
                     </div>
                 </div>
             </div>
@@ -331,19 +330,21 @@
     infowindow.open(map, marker);
 
 
-    (function (d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-
-        if (typeof LivereTower === 'function') {
-            return;
-        }
-
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-
-        e.parentNode.insertBefore(j, e);
-    })(document, 'script');
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://sejong-hyeonjeong.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
 </script>
 
 </body>
