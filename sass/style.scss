@@ -247,13 +247,13 @@ figure {
 
 .fh5co-cover{
 	position: relative;
-	background-image: url(/images/wedding01-cover.jpg);
+	background-image: url(/images/wedding-desktop-cover.jpg);
 	background-size:     cover;
 	background-repeat:   no-repeat;
 
 	@media screen and (max-width: $screen-sm) {
 		height: inherit;
-		background-image: url(/images/wedding00-cover.jpg);
+		background-image: url(/images/wedding-mobile-cover.jpg);
 	}
 	.display-t{
 		display: table;
