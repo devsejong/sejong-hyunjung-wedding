@@ -152,10 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 figure {
 	margin-bottom: 2em;
 }
-::-webkit-selection {
-  color: $brand-body-color;
-  background: $brand-selection-color;
-}
 
 ::-moz-selection {
   color: $brand-body-color;
@@ -246,15 +242,18 @@ figure {
 	bottom: 0;
 	right: 0;
 	z-index: 1;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .2);
 }
 
 .fh5co-cover{
-	background-size: cover;
 	position: relative;
+	background-image: url(/images/wedding01-cover.jpg);
+	background-size:     cover;
+	background-repeat:   no-repeat;
+
 	@media screen and (max-width: $screen-sm) {
-		heifght: inherit;
-		padding: 3em 0;
+		height: inherit;
+		background-image: url(/images/wedding00-cover.jpg);
 	}
 	.display-t{
 		display: table;
@@ -262,43 +261,49 @@ figure {
 		width: 100%;
 		position: relative;
 		z-index: 2;
+		padding-top: 20em;
 		@media screen and (max-width :$screen-sm) {
 			height: 600px;
+			padding-top: 20em;
 		}
 	}
-	.display-tc{
+	.display-tc {
 		display: table-cell;
 		vertical-align: middle;
 		h1{
 			color: $brand-white;
 			@media screen and (max-width: $screen-sm) {
-				font-size: 40px;
+				font-size: 30px;
 			}
 		}
-		h2{
+		h2 {
 			color: $brand-white;
-			font-size: 80px;
+			font-size: 70px;
 			margin-bottom: 30px;
 			font-weight: 300!important;
 			strong {
 				font-weight: 700;
 			}
 			@media screen and (max-width: $screen-sm) {
-				font-size: 45px;
+				font-size: 40px;
 			}
 		}
 		p{
 			color: $brand-white;
 			font-weight: 400;
-			font-size: 20px;
+			font-size: 25px;
 			font-family: "GyeonggiBatang", cursive;
 			letter-spacing: 4px;
 			line-height: 2em;
 			border-top: 2px solid $brand-white;
 			border-bottom: 2px solid $brand-white;
 			display: inline-block;
+			@media screen and (max-width: $screen-sm) {
+				font-size: 20px;
+			}
+
 			span {
-				padding: 10px 0px;
+				padding: 10px 0;
 			}
 		}
 	}

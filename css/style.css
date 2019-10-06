@@ -56,11 +56,6 @@ figure {
   margin-bottom: 2em;
 }
 
-::-webkit-selection {
-  color: #fcfcfc;
-  background: #F69D9D;
-}
-
 ::-moz-selection {
   color: #fcfcfc;
   background: #F69D9D;
@@ -167,18 +162,20 @@ figure {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .fh5co-cover {
-  background-size: cover;
   position: relative;
+  background-image: url(/images/wedding01-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
-    padding: 3em 0;
+    height: inherit;
+    background-image: url(/images/wedding00-cover.jpg);
   }
 }
 
@@ -188,11 +185,13 @@ figure {
   width: 100%;
   position: relative;
   z-index: 2;
+  padding-top: 20em;
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t {
     height: 600px;
+    padding-top: 20em;
   }
 }
 
@@ -207,13 +206,13 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
 .fh5co-cover .display-tc h2 {
   color: #fff;
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 30px;
   font-weight: 300 !important;
 }
@@ -224,14 +223,14 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-tc h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 
 .fh5co-cover .display-tc p {
   color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "GyeonggiBatang", cursive;
   letter-spacing: 4px;
   line-height: 2em;
@@ -240,8 +239,14 @@ figure {
   display: inline-block;
 }
 
+@media screen and (max-width: 768px) {
+  .fh5co-cover .display-tc p {
+    font-size: 20px;
+  }
+}
+
 .fh5co-cover .display-tc p span {
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .section {
